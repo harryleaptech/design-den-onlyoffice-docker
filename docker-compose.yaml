@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  onlyoffice-documentserver:
+    image: onlyoffice/documentserver
+    container_name: onlyoffice-documentserver
+    restart: always
+    ports:
+      - "8080:80"
+    env_file:
+      .env
